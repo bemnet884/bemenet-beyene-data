@@ -1,0 +1,130 @@
+.workflow-horizontal {
+  position: relative;
+  max-width: 1000px;
+  margin: 60px auto 0;
+  padding: 20px 0;
+}
+
+.workflow-line {
+  position: absolute;
+  top: 14px;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background-color: var(--border);
+  z-index: 1;
+}
+
+.workflow-steps-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.workflow-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.workflow-dot-container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.workflow-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--surface);
+  border: 2px solid var(--secondary);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--bg);
+  transition: all 0.3s ease;
+}
+
+.workflow-content {
+  width: 100%;
+}
+
+.workflow-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  letter-spacing: 0.1em;
+}
+
+.workflow-title {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.workflow-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.workflow-step:hover {
+  transform: translateY(-4px);
+}
+
+.workflow-step:hover .workflow-dot {
+  background-color: var(--secondary);
+  box-shadow: 0 0 0 6px var(--bg), 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .workflow-horizontal {
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+
+  .workflow-steps-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .workflow-line {
+    top: 50px;
+    bottom: 50px;
+    left: 31px;
+    right: auto;
+    width: 2px;
+    height: auto;
+  }
+
+  .workflow-step {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .workflow-step:last-child {
+    margin-bottom: 0;
+  }
+
+  .workflow-dot-container {
+    width: 30px;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: 20px;
+    padding-top: 4px;
+    flex-shrink: 0;
+  }
+}
