@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             Data Analytics & Data Entry | Dashboards | MEL Systems | NGO Programs
           </p>
           <div className="hero-actions">
-            <a href="#experience" className="btn btn-primary btn-lg">View Experience</a>
+            <a href="/Bemenet B. Data.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">View Resume</a>
             <a href="#contact" className="btn btn-outline btn-lg">Contact Me</a>
           </div>
         </div>

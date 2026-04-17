@@ -108,8 +108,8 @@
 
 /* Minimalist impact badge */
 .impact-badge {
-  width: 220px;
-  height: 220px;
+  width: 330px;
+  height: 330px;
   border-radius: 50%;
   background-color: transparent;
   border: 1px dashed rgba(255, 255, 255, 0.2);
@@ -125,8 +125,8 @@
 }
 
 .badge-inner {
-  width: 170px;
-  height: 170px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
@@ -140,7 +140,7 @@
 
 .b-num {
   font-family: var(--font-heading);
-  font-size: 2.75rem;
+  font-size: 3.5rem;
   font-weight: 600;
   line-height: 1;
   margin-bottom: 8px;
@@ -149,7 +149,7 @@
 
 .b-text {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
@@ -168,20 +168,24 @@
   .contact-card {
     flex-direction: column;
     padding: 48px 32px;
-    text-align: center;
+    text-align: left;
   }
   
+  .contact-card::before {
+    display: none;
+  }
+  
+  .footer-visual {
+    display: none;
+  }
+
   .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   
   .contact-methods {
-    align-items: center;
-  }
-  
-  .impact-badge {
-    margin-top: 32px;
+    align-items: flex-start;
   }
 }

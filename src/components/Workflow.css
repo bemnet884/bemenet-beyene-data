@@ -90,41 +90,32 @@
 @media (max-width: 768px) {
   .workflow-horizontal {
     margin-top: 30px;
-    padding-left: 20px;
+    padding-left: 0;
   }
 
   .workflow-steps-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 16px;
   }
 
-  .workflow-line {
-    top: 50px;
-    bottom: 50px;
-    left: 31px;
-    right: auto;
-    width: 2px;
-    height: auto;
+  .workflow-line,
+  .workflow-dot-container {
+    display: none;
   }
 
   .workflow-step {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    margin-bottom: 40px;
-    padding: 0;
+    margin-bottom: 0;
+    padding: 24px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
   }
 
   .workflow-step:last-child {
     margin-bottom: 0;
-  }
-
-  .workflow-dot-container {
-    width: 30px;
-    height: auto;
-    margin-bottom: 0;
-    margin-right: 20px;
-    padding-top: 4px;
-    flex-shrink: 0;
   }
 }

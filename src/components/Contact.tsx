@@ -27,8 +27,8 @@ const Contact: React.FC = () => {
               </a>
             </div>
 
-            <a href="/Bemenet B. Data.pdf" download className="btn btn-primary btn-cv" style={{ display: 'inline-block', textAlign: 'center', textDecoration: 'none' }}>
-              Download CV
+            <a href="/Bemenet B. Data.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-cv" style={{ display: 'inline-block', textAlign: 'center', textDecoration: 'none' }}>
+              View CV
             </a>
           </div>
 
